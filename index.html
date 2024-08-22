@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS & DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind CDN Configuration -->
+    <!-- <script>
+      // tailwind.config.js
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Primary: "red",
+              secondary: "rgba(171, 239, 95, 0.5)",
+              body: "rgba(171, 239, 95, 0.5)",
+              gray: "rgb(115, 115, 115)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              paper: "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script> -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Primary: "red",
+              Secondary: "rgba(171, 239, 95, 0.5)",
+              Body: "rgba(171, 239, 95, 0.5)",
+              Gray: "rgb(115, 115, 115)",
+            },
+            fontFamily: {
+              Manrope: "Manrope",
+            },
+            backgroundImage: {
+              Paper: url("./assets/bg.jpg"),
+            },
+          },
+        },
+      };
+    </script> -->
   </head>
-  <body>
-    Site in under construction
+  <body class="font-Manrope">
+    <!--------------------------------------------------------
+                    Header Section Start
+    -------------------------------------------------------->
+    <section class="bg-[#f6f6f6]">
+      <header class="container mx-auto">
+        <!-- Navigation Bar -->
+        <nav class="pt-3">
+          <div class="navbar bg-base-100 bg-[#f6f6f6]">
+            <div class="navbar-start">
+              <a class="btn btn-ghost"
+                ><i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-[#abef5f] p-3 rounded-full"
+                ></i
+                ><span class="text-2xl md:text-2xl">Rinterio</span></a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base font-medium">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="gap-4 mr-4 hidden sm:block">
+                <i
+                  class="fa-solid fa-magnifying-glass p-4 bg-white rounded-full"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping p-4 bg-white rounded-full"
+                ></i>
+              </div>
+              <a
+                class="btn bg-[#abef5f] px-5 rounded-full hidden sm:block content-center"
+                >Book Consult
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-black p-2 text-white rounded-full"
+                ></i
+              ></a>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-3 text-base font-medium"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
